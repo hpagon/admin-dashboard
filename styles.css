@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: 1px solid black; */
 }
 
 .main {
@@ -9,14 +10,12 @@
 }
 
 .header {
-    background-color: red;
 }
 
 .sidebar {
-    background-color: green;
     grid-row: 1 / 3;
+    background-color: lightblue;
 }
 
 .main-content {
-    background-color: blue;
 }

@@ -21,6 +21,7 @@ div {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    background-color: #a1a1aa;
 }
 
 .header-options {
@@ -46,12 +47,23 @@ div {
     background-color: lightblue;
     display: grid;
     grid-template-rows: 100px 300px 150px;
+    background-color: #18181b;
+    color: #fafafa;
+}
+
+.sidebar img {
+    filter: invert(98%) sepia(78%) saturate(12%) hue-rotate(80deg) brightness(106%) contrast(96%);;
+    height: 30px;
 }
 
 .sidebar-header{
     display: grid;
     grid-template-columns: 80px 1fr;
-    align-content: center;
+    align-items: center;
+}
+
+.sidebar-header img {
+    height: 70px;
 }
 
 .sidebar-menu {

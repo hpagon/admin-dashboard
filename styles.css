@@ -19,6 +19,25 @@ div {
 .header {
     background-color: lightgray;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header-options {
+    justify-self: center;
+    align-self: center;
+}
+
+.searchbar {
+    justify-self: center;
+    align-self: center;
+}
+
+.icon-select {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
 }
 
 /* sidebar styles */

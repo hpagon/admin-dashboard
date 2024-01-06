@@ -46,7 +46,8 @@ div {
     grid-row: 1 / 3;
     background-color: lightblue;
     display: grid;
-    grid-template-rows: 100px 300px 150px;
+    grid-template-rows: 100px 400px 150px;
+    gap: 30px;
     background-color: #18181b;
     color: #fafafa;
 }
@@ -59,23 +60,30 @@ div {
 .sidebar-header{
     display: grid;
     grid-template-columns: 80px 1fr;
+    gap: 15px;
     align-items: center;
 }
 
 .sidebar-header img {
     height: 70px;
+    justify-self: end;
 }
 
-.sidebar-menu {
+.sidebar-menu, .sidebar-options {
     display: grid;
     align-content: start;
     gap: 20px;
 }
 
-.sidebar-options {
+.menu-choice, .options-choice {
     display: grid;
-    align-content: start;
-    gap: 20px;
+    grid-template-columns: 55px 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-choice img , .options-choice img{
+    justify-self: end;
 }
     
 /* main content styles */

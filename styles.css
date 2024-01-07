@@ -130,9 +130,9 @@
 .main-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 300px;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     gap: 25px;
-    padding: 25px;
+    padding: 30px;
     background-color: #f8fafc;
 }
 
@@ -143,7 +143,7 @@
     grid-column: 3 / 5;
 }
 
-.project-container {
+.your-projects {
     grid-column: 1 / 4;
     grid-row: 2 / 4;
 }
@@ -163,7 +163,17 @@
 }
 
     /* project styles */
-.project-container .project img {
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project {
+    height: 200px;
+}
+
+.project img {
     height: 24px;
 }
 

@@ -23,6 +23,8 @@ div {
     grid-template-columns: 1fr 2fr 1fr;
     background-color: white;
     height: 70px;
+    /* box-shadow: 0px 5px red; */
+    border-bottom: 1px solid lightgray;
 }
 
 .header-options {
@@ -135,7 +137,7 @@ div {
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
     padding: 25px;
-    background-color: #e5e5e5;
+    background-color: #f8fafc;
 }
 
 .performance-overview {
@@ -161,6 +163,12 @@ div {
 .card {
     background-color: white;
     border-radius: 12px;
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+    /* project styles */
+.project-container .project img {
+    height: 24px;
 }
 
 /* profile picture styles */

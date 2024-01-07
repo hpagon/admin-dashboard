@@ -21,25 +21,66 @@ div {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    background-color: #a1a1aa;
+    background-color: #e4e4e7;
+    height: 70px;
 }
 
 .header-options {
-    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-self: center;
+    justify-self: center;
+    gap: 15px;
+}
+
+.header-options button {
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3f3f46;
 }
 
 .searchbar {
     justify-self: center;
     align-self: center;
+    position: relative;
+}
+
+.searchbar input {
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 500px;
+    padding-left: 50px;
+}
+
+.search-icon {
+    height: 30px;
+    position: absolute;
+    left: 10px;
 }
 
 .icon-select {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: 40px min-content max-content;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
 }
+
+.icon-select .profile-picture {
+    height: 40px;
+}
+
+    /* bell icon style */
+.icon-select img {
+    height: 25px;
+}
+
 
 /* sidebar styles */
 .sidebar {
@@ -117,5 +158,5 @@ div {
 
 /* profile picture styles */
 .profile-picture {
-    height: 60px;
+    height: 40px;
 }

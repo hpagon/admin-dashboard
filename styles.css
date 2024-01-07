@@ -11,7 +11,7 @@ div {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(300px, 1fr) 5fr;
 }
 
 
@@ -133,7 +133,7 @@ div {
 /* main content styles */
 .main-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) 300px;
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
     padding: 25px;
@@ -171,7 +171,33 @@ div {
     height: 24px;
 }
 
+    /* trending styles */
+.trending .card {
+    display: grid;
+    gap: 24px;
+    padding: 20px;
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 20% max-content;
+    gap: 15px;
+}
+
+.trending-profile img {
+    justify-self: end;
+}
+
+.trending .card .trending-profile div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+    /* bolds trending username */
+.trending-profile p:nth-child(1){
+    font-weight: 500;
+}
+
 /* profile picture styles */
 .profile-picture {
-    height: 40px;
+    height: 45px;
 }

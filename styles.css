@@ -136,6 +136,13 @@
     background-color: #f8fafc;
 }
 
+    /* gives space between headers and content */
+.main-content > div {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    gap: 10px;
+}
+
 .performance-overview {
     grid-column: 1 / 3;
 }
@@ -182,6 +189,10 @@
     align-self: end;
 }
 
+.project p {
+    color: #52525b;
+}
+
 .project .project-icons {
     justify-self: end;
     display: grid;
@@ -197,6 +208,11 @@
 .announcements .card {
     display: grid;
     padding: 25px;
+}
+
+.announcements .card p {
+    color: #52525b;
+    font-size: 14px;
 }
 
         /* gives top padding to every announcement except the first */
@@ -233,6 +249,10 @@
         /* bolds trending username */
 .trending-profile p:nth-child(1){
     font-weight: 500;
+}
+        /* changes color only for subtext */
+.trending-profile p:nth-child(2) {
+    color: #52525b;
 }
 
 /* profile picture styles */

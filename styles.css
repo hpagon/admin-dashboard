@@ -169,6 +169,15 @@
     box-shadow: 0px 0px 5px lightgray;
 }
 
+    /* profile visit style */
+.profile-visits .card {
+    padding-top: 10px;
+}
+
+.profile-visits .card img{
+    width: 700px;
+}
+
     /* project styles */
 .project-container {
     display: grid;

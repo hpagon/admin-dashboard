@@ -40,6 +40,8 @@
     font-size: 15px;
     font-weight: 600;
     color: #3f3f46;
+    position: relative;
+    transition: top ease 0.5s;
 }
 
 .searchbar {
@@ -73,11 +75,15 @@
 
 .icon-select .profile-picture {
     height: 40px;
+    position: relative;
+    transition: top ease 0.5s;
 }
 
     /* bell icon style */
 .icon-select img {
     height: 25px;
+    position: relative;
+    transition: top ease 0.5s;
 }
 
 
@@ -117,9 +123,15 @@
 
 .menu-choice, .options-choice {
     display: grid;
-    grid-template-columns: 55px 1fr;
+    margin-left: 10px;
+    grid-template-columns: 30px 1fr;
     align-items: center;
     gap: 15px;
+    width: 70%;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .menu-choice img , .options-choice img{
@@ -143,16 +155,9 @@
     gap: 10px;
 }
 
-.performance-overview {
-    grid-column: 1 / 3;
-}
-.profile-visits {
-    grid-column: 3 / 5;
-}
-
 .your-projects {
     grid-column: 1 / 4;
-    grid-row: 2 / 4;
+    grid-row: 1 / 4;
 }
 
 .announcements {
@@ -167,15 +172,6 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 0px 5px lightgray;
-}
-
-    /* profile visit style */
-.profile-visits .card {
-    padding-top: 10px;
-}
-
-.profile-visits .card img{
-    width: 700px;
 }
 
     /* project styles */
@@ -211,6 +207,8 @@
 
 .project img {
     height: 24px;
+    position: relative;
+    transition: top ease 0.5s;
 }
 
     /* announcement styles */
@@ -267,4 +265,35 @@
 /* profile picture styles */
 .profile-picture {
     height: 45px;
+    position: relative;
+    transition: top ease 0.5s;
+}
+
+/* pseudo styles */
+.project-icons img:hover {
+    top: 2px;
+    cursor: pointer;
+}
+
+.project-icons img:active, .search-icon:active {
+    scale: 1.08;
+        
+}
+
+.header-options button:hover, .profile-picture:hover, .icon-select img:hover {
+    top: 2px;
+    cursor: pointer;
+}
+
+.header-options button:active, .profile-picture:active, .icon-select img:active, .menu-choice:active, .options-choice:active {
+    scale: 1.04;
+}
+
+.menu-choice:hover, .options-choice:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    cursor: pointer;
 }

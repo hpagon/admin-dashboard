@@ -301,10 +301,28 @@
 /* media queries */
 @media (max-width: 1400px) {
     .searchbar {
-        width: max(230px, 70%);
+        width: max(230px, 70%);         /* collapse searchbar width */
     }
     .searchbar input {
         width: 100%;
     }
+    .header-options {
+        /* gap: 0px; */
+    }
+}
 
+@media (max-width: 1140px) {
+    .header {
+        grid-template-rows: 1fr 1fr;
+        height: 140px;
+    }
+    .searchbar {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        /* width: clamp(230px, 70%, 500px); */
+        width: max(230px, 70%);
+    }
+    .icon-select {
+        grid-column: 3 / 4;
+    }
 }

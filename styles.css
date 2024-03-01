@@ -318,11 +318,22 @@
     }
     .searchbar {
         grid-column: 1 / 4;
-        grid-row: 2 / 3;
-        /* width: clamp(230px, 70%, 500px); */
+        grid-row: 2 / 3;                    /* move searchbar to new row */
         width: max(230px, 70%);
     }
     .icon-select {
         grid-column: 3 / 4;
+    }
+}
+
+@media (max-width: 980px) {             /* organize main content column-wise */
+    .your-projects {
+        grid-column: 1 / 5;
+    }
+    .announcements {
+        grid-column: 1 / 5;
+    }
+    .trending {
+        grid-column: 1 / 5;
     }
 }

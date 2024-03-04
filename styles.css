@@ -110,6 +110,11 @@
     height: 30px;
 }
 
+.sidebar > .close-icon {
+    display: none;
+    border-radius: 12px;
+}
+
 .sidebar-header{
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -293,11 +298,11 @@
     cursor: pointer;
 }
 
-.header-options button:active, .profile-picture:active, .icon-select img:active, .menu-choice:active, .options-choice:active {
+.header-options button:active, .profile-picture:active, .icon-select img:active, .menu-choice:active, .options-choice:active, .show > .close-icon:active {
     scale: 1.04;
 }
 
-.menu-choice:hover, .options-choice:hover {
+.menu-choice:hover, .options-choice:hover, .show > .close-icon:hover {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
 }
@@ -382,7 +387,8 @@
     .project-container {        /* decreased minimum project card width */
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    .show {
+    /* styles for when sidebar is displayed in shrank mode */
+    .show {                         
         display: block;
         position: fixed;
         z-index: 1;
@@ -390,6 +396,13 @@
         display: grid;
         gap: 0px;
         width: 200px;
+        grid-template-rows: min-content 50px 350px 150px;
+    }
+    .show > .close-icon {
+        display: block;
+        justify-self: end;
+        margin-right: 10px;
+        margin-top: 5px;
     }
     .show .sidebar-header {
         gap: 5px;
@@ -401,5 +414,8 @@
     }
     .show h1 {
         font-size: 24px;
+    }
+    .show .sidebar-menu {
+        margin-top: 15px;
     }
 }

@@ -1,16 +1,11 @@
 let menuIcon = document.querySelector(".menu-icon");
 let sidebar = document.querySelector(".sidebar");
+let closeIcon = document.querySelector(".close-icon");
 
-function toggleSidebar() {                          //switch sidebar between hidden and shown
-    if(sidebar.classList.contains('show')) {
-        sidebar.classList.remove('show');
-    }
-    else {
-        sidebar.classList.add('show');
-    }
-}
+menuIcon.addEventListener("click", () => {      //menu icon shows sidebar
+    sidebar.classList.add("show");
+})
 
-
-menuIcon.addEventListener("click", () => {      //menu icon triggers toggle
-    toggleSidebar();                           
+closeIcon.addEventListener("click", () => {     //close icon hides sidebar
+    sidebar.classList.remove("show");
 })
